@@ -1,0 +1,69 @@
+Comprehensive Report on Customer Churn Prediction using Neural Networks
+
+Name: Gottipalli Sri Vishnu Satwik
+Roll no.:21CS10027
+
+
+Introduction
+
+Customer churn, or the loss of customers, is a significant concern for businesses as it directly impacts revenue and profitability. Predicting customer churn allows companies to implement proactive strategies to retain customers and enhance satisfaction. In this report, we explore the development and evaluation of neural network models for predicting customer churn based on a provided dataset.
+Dataset Overview
+
+The dataset comprises various attributes related to customers, including demographics, services subscribed, and account details. The target variable is binary, indicating whether a customer churned or not. Here's a brief summary of the dataset:
+
+    Total Records: [Insert total number of records]
+    Attributes: [List attributes/features]
+    Target Variable: Churn (Yes/No)
+
+Data Preprocessing
+
+Before model development, we conducted preprocessing on the dataset, including handling missing values and encoding categorical variables. Key preprocessing steps:
+
+    Removal of the "customerID" column as it does not contribute to the prediction.
+    Encoding categorical variables into numerical values.
+    Handling missing values in the "TotalCharges" column by replacing them with the mean.
+
+Neural Network Implementation
+
+We implemented two neural network architectures to predict customer churn:
+
+    Neural Network Specification 1:
+        Single hidden layer with 64 neurons and a sigmoid activation function.
+        Output layer with softmax activation.
+        Mini-batch stochastic gradient descent (SGD) optimization.
+        Categorical cross-entropy loss function.
+
+    Neural Network Specification 2:
+        Two hidden layers with 64 and 32 neurons, respectively, using ReLU activation.
+        Output layer similar to Specification 1.
+        Mini-batch SGD optimization and cross-entropy loss.
+
+Model Training and Evaluation
+Neural Network Specification 1 Results:
+
+    Training Accuracy: 76.25%
+    Testing Accuracy: 77%
+
+Neural Network Specification 2 Results:
+
+    Training Accuracy: 73.5%
+    Testing Accuracy: 72.95%
+
+
+Conclusion
+
+In conclusion, we successfully developed neural network models for predicting customer churn based on the provided dataset. Both specifications demonstrated reasonable accuracy in predicting churn. This project highlights the efficacy of neural networks in churn prediction and offers insights for future research and practical applications.
+Appendices
+Code Implementation Details
+
+    Preprocessing steps
+    Neural network architecture and training process
+    Performance evaluation and results
+
+Visualizations
+
+    Training vs. Epochs plot for both specifications
+    Testing vs. Epochs plot for both specifications
+    Any additional visualizations supporting the analysis
+
+
